@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # Required for Devise gem
+  config.action_mailer.default_url_options = { host: 'ruby-on-rails-108783.nitrousapp.com:3000' }
 end
